@@ -10,15 +10,15 @@ if (!isset($_SESSION['utilisateur'])) {
 
 $reclamation = new Reclamation($pdo);
 
-// Check the user's role
+
 if ($_SESSION['utilisateur']['role'] === 'client') {
-    // For a client, show only their own claims
+    
     $reclamations = $reclamation->listerPourClient($_SESSION['utilisateur']['id']);
-    $statistiques = $reclamation->statistiquesClient($_SESSION['utilisateur']['id']);  // New method for client-specific stats
+    $statistiques = $reclamation->statistiquesClient($_SESSION['utilisateur']['id']);  
 } else if ($_SESSION['utilisateur']['role'] === 'support') {
-    // For support, show all claims
+  
     $reclamations = $reclamation->listerToutes();
-    $statistiques = $reclamation->statistiques();  // Existing method for support-wide stats
+    $statistiques = $reclamation->statistiques();  
 } else {
     header('Location: index.php');
     exit();
