@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         button {
             padding: 10px;
-            background-color: #4CAF50;
+            background-color:rgb(33, 141, 184);
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -80,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color:rgb(25, 141, 164);
         }
 
         .error {
@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             text-align: center;
             display: block;
             margin-top: 20px;
-            color: #4CAF50;
+            color:rgba(20, 164, 189, 0.76);
             text-decoration: none;
             font-size: 16px;
         }
