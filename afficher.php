@@ -39,6 +39,13 @@ if ($_SESSION['utilisateur']['role'] === 'client') {
 <body>
     <div class="container mt-5">
         <a href="logout.php" class="btn logout-btn">Déconnexion</a>
+        <?php if ($_SESSION['utilisateur']['role'] === 'support') : ?>
+            <a href="genere_pdf.php" class="btn btn-secondary mt-3">Générer PDF</a>
+        <?php endif; ?>
+        <?php if ($_SESSION['utilisateur']['role'] === 'support') : ?>
+
+            <a href="telecharger_csv.php" class="btn btn-success mt-3">Télécharger la table en CSV</a>
+        <?php endif; ?>
 
         <?php if ($_SESSION['utilisateur']['role'] === 'client') : ?>
             <a href="formulaire.php" class="btn btn-primary nouvelle-reclamation-btn">Nouvelle Réclamation</a>
