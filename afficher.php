@@ -12,13 +12,13 @@ $reclamation = new Reclamation($pdo);
 
 
 if ($_SESSION['utilisateur']['role'] === 'client') {
-    
+
     $reclamations = $reclamation->listerPourClient($_SESSION['utilisateur']['id']);
-    $statistiques = $reclamation->statistiquesClient($_SESSION['utilisateur']['id']);  
+    $statistiques = $reclamation->statistiquesClient($_SESSION['utilisateur']['id']);
 } else if ($_SESSION['utilisateur']['role'] === 'support') {
-  
+
     $reclamations = $reclamation->listerToutes();
-    $statistiques = $reclamation->statistiques();  
+    $statistiques = $reclamation->statistiques();
 } else {
     header('Location: index.php');
     exit();
@@ -26,6 +26,7 @@ if ($_SESSION['utilisateur']['role'] === 'client') {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +35,7 @@ if ($_SESSION['utilisateur']['role'] === 'client') {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="styles/afficher.css">
 </head>
+
 <body>
     <div class="container mt-5">
         <a href="logout.php" class="btn logout-btn">Déconnexion</a>
@@ -129,4 +131,5 @@ if ($_SESSION['utilisateur']['role'] === 'client') {
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>

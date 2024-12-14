@@ -29,7 +29,8 @@ h1 {
     text-align: center;
 }
 
-.table th, .table td {
+.table th,
+.table td {
     padding: 12px;
     border: 1px solid #ddd;
     text-align: center;
@@ -116,8 +117,8 @@ h1 {
         height: auto;
     }
 
-    .table th, .table td {
+    .table th,
+    .table td {
         padding: 8px;
     }
 }
-

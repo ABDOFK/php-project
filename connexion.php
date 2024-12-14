@@ -16,4 +16,3 @@ require_once 'classes/Reclamation.php';
 
 $user = new User($pdo);
 $reclamation = new Reclamation($pdo);
-?>

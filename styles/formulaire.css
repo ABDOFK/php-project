@@ -28,8 +28,13 @@ label {
     display: block;
 }
 
-textarea, select, input[type="text"], input[type="email"], input[type="password"] {
-    width: calc(100% - 30px);  /* Ensures input width accounts for padding */
+textarea,
+select,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 30px);
+    /* Ensures input width accounts for padding */
     padding: 15px;
     margin: 10px 0 20px 0;
     border-radius: 8px;
@@ -45,7 +50,11 @@ textarea {
     resize: vertical;
 }
 
-textarea:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, select:focus {
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
     border-color: #0056b3;
     box-shadow: 0 0 8px rgba(0, 91, 255, 0.3);
     outline: none;

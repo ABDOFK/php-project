@@ -19,90 +19,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Connexion</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        label {
-            font-size: 16px;
-            margin-bottom: 5px;
-            color: #555;
-        }
-
-        input {
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-            color: #333;
-        }
-
-        button {
-            padding: 10px;
-            background-color:rgb(33, 141, 184);
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color:rgb(25, 141, 164);
-        }
-
-        .error {
-            color: red;
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        a {
-            text-align: center;
-            display: block;
-            margin-top: 20px;
-            color:rgba(20, 164, 189, 0.76);
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -125,4 +48,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 
 </body>
+
 </html>

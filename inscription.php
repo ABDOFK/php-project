@@ -17,14 +17,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Inscription</title>
     <link rel="stylesheet" href="styles/inscription.css">
     <style>
-       
+
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Inscription</h1>
@@ -41,4 +43,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="index.php">Retour à la Connexion</a>
     </div>
 </body>
+
 </html>
